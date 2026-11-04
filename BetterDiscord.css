@@ -2,12 +2,8 @@
      --background: url('https://media.online-station.net/images/2026/02/20b90e06f86a48861000fe213d00270c.jpg');
      --activetext-colour: white;
  
-    --primary1-colour: #00d9ff;
-    --primary2-colour: rgba(0, 217, 255, 0.50);
-    --primary3-colour: rgba(0, 100, 150, 0.60);
-    --primary4-colour: rgba(0, 100, 150, 0.40);
+    --primary2-colour: rgba(255, 255, 255, 0.164);
  
-     --secondary1-colour: rgba(50,50,50,0.3);
      --secondary2-colour: rgba(100,100,100,0.5);
      --secondary3-colour: rgba(0,0,0,0.6);
      --secondary4-colour: rgba(0,0,0,0.3);
@@ -23,6 +19,17 @@
     #app-mount .bg__960e4,
     #app-mount .app__160d8 { 
         background-color: var(--secondary4-colour); 
+    }
+
+/* PURPLE LINKS */
+    #app-mount a {
+        color: #fcfcfc;
+        transition: color 0.2s ease;
+    }
+
+    #app-mount a:hover {
+        color: #6200ff;
+        text-shadow: 0 0 8px rgba(168, 85, 247, 0.45);
     }
 
 /*Home and Discover*/
@@ -103,11 +110,6 @@
 
     /*Discover Servers*/
         #app-mount .sidebar__5e434 .container__551b0 {background-color: var(--secondary4-colour);}
-
-        #app-mount .scroller__23746 {
-            background-color: transparent; 
-            background-color: var(--secondary4-colour);
-        }
 
         #app-mount .content_f0d60d .card__84e3e  {
             background-color: var(--secondary3-colour);
@@ -203,11 +205,6 @@
 
         #app-mount .containerDefault__29444 .iconVisibility__29444:not(.collapsed__29444) .overflow_b0dfc2 { color: white; }
 
-        #app-mount .activityPanel__5e434 {
-            background-color: var(--secondary4-colour); 
-            background-color: rgba(0,0,0,0); 
-            margin-bottom: 0;
-        }
 
         #app-mount .containerDefault__29444 { margin-top: 15px; }
         #app-mount .containerDefault_c69b6d { margin-right: 10px; }
@@ -1175,12 +1172,13 @@
 
 /*TopBar*/ 
     #app-mount .title_c38106::before {
-        content: "KIM";
-        color: rgb(255,255,255,0.5);
-        font-weight: 500;
-
-        position: left;
-        margin-right: 10px;
+        content: "KIM-OBSIDIAN-v3";
+        color: #c084fc;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 6px;
+        margin-right: 14px;
+        text-shadow: 0 0 14px rgba(168, 85, 247, 0.8);
     }
     #app-mount .title_c38106 {
         background-color: var(--secondary3-colour);
